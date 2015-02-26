@@ -9,9 +9,11 @@
 <meta name="description" content="Documentation and reference library for ZURB Foundation. JavaScript, CSS, components, grid and more."/>
 <meta name="author" content="ZURB, inc. ZURB network also includes zurb.com"/>
 <meta name="copyright" content="ZURB, inc. Copyright (c) 2015"/>
-<link rel="stylesheet" href="css/foundation.css"/>
-<link rel="stylesheet" href="css/banner-theme.css"/>
-<script src="js/vendor/modernizr.js"></script>
+<link rel="stylesheet" href="../css/foundation.css"/>
+<link rel="stylesheet" href="../css/banner-theme.css"/>
+<link rel="stylesheet" href="../pizza-master/dist/css/pizza.css"/>
+<script src="../js/vendor/modernizr.js"></script>
+<script src="../js/vendor/jquery.js"></script>
 </head>
 <body>
 <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
@@ -51,18 +53,50 @@
 <div class="large-8 columns about-content">
 <h4>This is a content section.</h4>
 <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-<p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
 </div>
 <div class="large-4 columns">
-<ul class="small-block-grid-2">
-<li><a href="#"><img src="img/develop/template-themes/dog1.png"/></a></li>
-<li><a href="#"><img src="img/develop/template-themes/dog2.png"/></a></li>
-<li><a href="#"><img src="img/develop/template-themes/dog3.png"/></a></li>
-<li><a href="#"><img src="img/develop/template-themes/dog4.png"/></a></li>
-</ul>
+<!-- <ul class="small-block-grid-2">
+<li><a href="#"> --> <img src="../img/steven.jpg"/> <!-- </a></li>
+</ul> -->
 </div>
 </div>
 </section>
+<section class="hero-content">
+<div class="row">
+<div class="large-4 columns">
+<!-- <ul class="small-block-grid-2">
+<li><a href="#"> -->
+<img src="../img/cadeem.jpg"/> <!-- </a></li>
+</ul> -->
+</div>
+<div class="large-8 columns about-content">
+<h4>This is a content section.</h4>
+<p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+</div>
+</div>
+</section>
+<section class="hero-content2">
+<!-- <ul class="small-block-grid-2">
+<li><a href="#"> -->
+<div class="row">
+<div class="large-12 columns about-content">
+<h4>Fraternity Representation</h4>
+<p>Because engineering is such a diverse field, our members come from a variety of educational backgrounds. Our member distribution by major is as such.</p>
+<ul class="large-4 columns" data-pie-id="majors">
+	<li data-value="8">Computer Science</li>
+	<li data-value="11">Mechanical</li>
+	<li data-value="3">Aerospace</li>
+	<li data-value="3">Computer Engineering</li>
+	<li data-value="2">Materials</li>
+	<li data-value="3">Chemical</li>
+	<li data-value="3">Bio-Engineering</li>
+	<li data-value="2">Civil</li>
+	<li data-value="2">Undecided</li>
+</ul>
+<div class="large-6 columns" id="majors"></div>
+</div>
+</section>
+<section class="hero-content3">
 <div class="row">
 <div class="large-12 columns">
 <div class="panel">
@@ -78,6 +112,7 @@
 </div>
 </div>
 </div>
+</section>
 <footer>
 <div class="row">
 <div class="large-6 columns">
@@ -94,20 +129,29 @@
 </footer>
 <script>
 document.write('<script src=' +
-('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+('__proto__' in {} ? '../js/vendor/zepto' : '../js/vendor/jquery') +
 '.js><\/script>')
 </script>
-<script src="js/foundation.min.js"></script>
+<script src="../js/foundation.min.js"></script>
 <script>
   $(document).foundation();
 </script>
-<script src="js/vendor/jquery.js"></script>
-<script src="js/foundation/foundation.js"></script>
+<script src="../js/vendor/jquery.js"></script>
+<script src="../js/foundation/foundation.js"></script>
 <script>
       $(document).foundation();
 
       var doc = document.documentElement;
       doc.setAttribute('data-useragent', navigator.userAgent);
     </script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="../pizza-master/dist/js/vendor/dependencies.js"></script>
+<script src="../pizza-master/dist/js/pizza.js"></script>
+<script>
+	$(window).load(function() {
+	Pizza.init();
+	$(document).foundation();
+	});
+	</script>
 </body>
 </html>

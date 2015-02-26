@@ -135,7 +135,8 @@ footer p, footer a {
 
 .hero {
 	padding-bottom: 50px;
-	background-image: url("../../img/develop/template-themes/dogbanner.jpg");
+/*	background-image: url("../img/dogbanner.jpg");*/
+	background-image: url("../img/crestbanner.jpg");
 	background-size: cover;
 	box-shadow: inset 0px 0px 0 2000px rgba(0,0,0,0.2);
 }
@@ -146,6 +147,16 @@ footer p, footer a {
 	background-color: #EAEAEA;
 }
 
+.hero-content2 {
+	padding-top: 40px;
+	padding-bottom: 40px;
+
+}
+.hero-content3 {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #EAEAEA;
+}
 .panel {
 	margin: 40px 0 40px 0;
 	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
