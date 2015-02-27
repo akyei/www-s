@@ -138,9 +138,15 @@ footer p, footer a {
 /*	background-image: url("../img/dogbanner.jpg");*/
 	background-image: url("../img/crestbanner.jpg");
 	background-size: cover;
+	background-position: center;
 	box-shadow: inset 0px 0px 0 2000px rgba(0,0,0,0.2);
 }
 
+.hero2 {
+	background-size: cover;
+	box-shadow: inset 0px 0px 0 2000px rgba(0,0,0,0.2);
+	background-color: #7B1D1F;
+}
 .hero-content {
 	padding-top: 40px;
 	padding-bottom: 40px;

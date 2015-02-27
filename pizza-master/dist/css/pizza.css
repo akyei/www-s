@@ -26,6 +26,35 @@ svg {
   border-radius: 3px;
   padding: 5px; }
 
-ul[data-pie-id] {
+ul[majors-pie-id] {
   list-style: none;
   padding: 10px; }
+ul[data-pie-id] li:nth-child(1) {
+  color: #4D4D4D;
+}
+
+ul[data-pie-id] li:nth-child(2) {
+  color: #5DA5DA;
+}
+
+ul[data-pie-id] li:nth-child(3) {
+  color: #FAA43A;
+}
+ul[data-pie-id] li:nth-child(4) {
+  color: #60bd68;;
+}
+ul[data-pie-id] li:nth-child(5) {
+  color: #F17CB0;
+}
+ul[data-pie-id] li:nth-child(6) {
+  color: #B2912F;
+}
+ul[data-pie-id] li:nth-child(7) {
+  color: #b276b2;
+}
+ul[data-pie-id] li:nth-child(8) {
+  color: #decf3f;
+}
+ul[data-pie-id] li:nth-child(9) {
+  color: #f15853;
+}
