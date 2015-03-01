@@ -51,13 +51,35 @@
 <div class="large-12 columns about-box">
 <div class="black-box">
 <h2>Welcome!</h2>
-<p>We’re a social/professional engineering Fraternity. Sigma Phi Delta's purpose is to further the engineering profession by creating a greater spirit of brotherhood among the various educational institutions across the United States.</p>
+<p>We’re a social and professional engineering Fraternity. Sigma Phi Delta's purpose is to further the engineering profession by creating a greater spirit of brotherhood among the various educational institutions across the United States.</p>
 <p>Interested in becoming a brother?</p>
 <a href="rush/index.html" class="secondary small button">Learn More →</a>
 </div>
 </div>
 </div>
 </section>
+	<div id="myModal" class="reveal-modal" data-reveal>
+		<form method="POST" action="email.php">
+		<div class="row">
+		<h5>Subject</h5>
+		<input type="text" placeholder="Subject" name="subject">
+		</div>
+		<div class="row">
+		<h5>Message</h5>
+		<textarea rows="8" name="body" placeholder="Write your message here!"></textarea>
+		</div>
+		<div class="row">
+		<h5>Your Info (Name, Organization, Email)</h5>
+		<input type="text" name="info-name" placeholder="Name">
+		<input type="text" name="info-org"placeholder="Organization">
+		<input type="email" name="info-email" placeholder="Email Address">
+		</div>
+		<a class="close-reveal-modal">&#215;</a>
+		<input class="alert button" type="submit" value="Send">
+		</form>		
+	</div>
+
+
 <section class="hero-content">
 <div class="row">
 <div class="large-12 columns about-content">
@@ -67,19 +89,21 @@
 </div>
 </div>
 </section>
+
 <section class="hero-content2">
-<div class="row small-collapse">
+<div class="row">
 <div class="large-8 columns about-content">
 <h4>Philanthropy<h4>
 <p>Sigma Phi Delta is a philanthropic organization. Here are some groups that we are involved in! <p>
 <ul>
-<li>KEEN</li>
+<li>Kids Enjoy Exercise Now (KEEN)</li>
 <li>Relay for Life</li>
 <li>Terpthon</li>
+<li>Alpha Omega Epsilons Turtle Trot 5k</li>
 </ul>
 </p>
 </div>
-<div class="large-4 columns">
+<div class="large-3 columns">
 <!--<ul class="small-block-grid-2">
 <li><a href="#"><img src="img/develop/template-themes/dog1.png"/></a></li>
 <li><a href="#"><img src="img/develop/template-themes/dog2.png"/></a></li>
@@ -98,11 +122,12 @@
 <div class="panel">
 <div class="row">
 <div class="large-9 columns">
-<h4>Get in touch!</h4>
-<p>We're open 9am - 5pm, Monday through Saturdays.</p>
+<h4>Would you like to partner with us?</h4>
+<p>Get in contact with our philanthropy chair!</p>
 </div>
 <div class="large-3 columns">
-<a href="#" class="radius button right">Contact Us</a>
+<a href="#" data-reveal-id="myModal" class="radius button right">Contact Us</a>
+</div>
 </div>
 </div>
 </div>
@@ -143,5 +168,6 @@ document.write('<script src=' +
       var doc = document.documentElement;
       doc.setAttribute('data-useragent', navigator.userAgent);
     </script>
+
 </body>
 </html>
