@@ -6199,3 +6199,13 @@ th.hide-for-touch {
 
   th.show-for-print {
     display: table-cell !important; } }
+@media only screen and (max-width: 500px) {
+	.small-collapse {
+		padding:0;
+		margin:0;
+	.columns {
+		padding:0;
+		margin:0;
+	}
+	}
+}
