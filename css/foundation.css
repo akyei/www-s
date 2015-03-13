@@ -3449,6 +3449,7 @@ ul.pagination {
     display: block;
     margin-bottom: 0 !important; }
     .accordion .accordion-navigation.active > a, .accordion dd.active > a {
+        pointer-events: none;
       background: #e8e8e8; }
     .accordion .accordion-navigation > a, .accordion dd > a {
       background: #EFEFEF;
@@ -3463,8 +3464,9 @@ ul.pagination {
       display: none;
       padding: 0.9375rem; }
       .accordion .accordion-navigation > .content.active, .accordion dd > .content.active {
+        pointer-events: none;
         display: block;
-        background: #FFFFFF; }
+	background: #FFFFFF; }
 
 .text-left {
   text-align: left !important; }
@@ -6203,9 +6205,26 @@ th.hide-for-touch {
 	.small-collapse {
 		padding:0;
 		margin:0;
-	.columns {
+	}.columns {
 		padding:0;
 		margin:0;
 	}
-	}
+}
+.bottom-bar {
+	margin-bottom: 0;
+	bottom: 0;
+	width: 100%;
+}
+.fixed-bottom{
+	width: 100%;
+	left: 0;
+	position: fixed;
+	bottom: 0;
+	z-index: 99;
+}
+.fullWidth {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: initial;
 }
